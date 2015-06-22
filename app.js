@@ -16,14 +16,14 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 //define routes
 
 app.use(require("./todo"));
+app.set('port', (process.env.PORT || 5000));
 
 //start the server
 
-app.listen(1337, function() {
 
-	console.log('Ready on port 1337')
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
-
 
 
 
