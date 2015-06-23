@@ -23,7 +23,7 @@ router.post('/add', function(req,res){
 		desc: newItem
 	});
 
-	res.redirect('/');
+	//res.redirect('/');
 
 })
 
