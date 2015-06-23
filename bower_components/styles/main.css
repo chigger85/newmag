@@ -1,0 +1,66 @@
+#lCol {
+
+	background: #666;
+	vertical-align: middle;
+	height:140px;
+	float: left;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    border-radius: 0px;
+    line-height:120px;
+    text-align:center;
+}
+
+#rCol {
+
+	background: #666;
+	height:140px;
+	vertical-align: middle;
+	float: right;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    position: relative;
+    border-radius: 0px;
+    line-height:120px;
+    text-align:center;
+}
+
+#mCol {
+
+	background-image: url("../img/bgTitle.png");
+	background-size: 800px;
+	height:140px;
+}
+
+#siteTitle {
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-shadow: 2px 2px #333	;
+	font-size: 50px;	
+	text-align : center;	
+
+}
+
+
+
+//media queries
+
+
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+    body {
+        font-size: 1.5em; /* 1.5x default size */
+    }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    body {
+        font-size: 1.2em; /* 1.2x default size */
+        }
+    }
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
+        font-size: 0.8em; /* 0.8x default size */
+        }
+    }
