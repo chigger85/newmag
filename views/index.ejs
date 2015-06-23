@@ -28,11 +28,12 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">News<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">News</a></li>
                     <li><a href="#">Teams</a></li>
                     <li><a href="#">Fixtures and Results</a></li>
                     <li><a href="#">Stats </a></li>
                     <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact us</a></li>
                     
                   </ul>
                   
@@ -44,45 +45,41 @@
         </div>
       </div>
     </header>
-
-
   
-       <div class = "row row-eq-height">
-
-          <div id = "lCol" class= "col-sm-2 col-xs-2 col-lg-1"> 
-            <img src = "img/New.svg" alt = "newLogo" style="width:68px;height:79px;" >
-          </div>
+     <div class = "row row-eq-height">
+         <div id = "lCol" class= "col-sm-2 col-xs-2 col-lg-1"> 
+            <img src = "img/New.svg" alt = "newLogo" style="width:68px;height:79px;">
+         </div>
           <div id = "mCol" class= "col-sm-8 col-xs-8 col-lg-10">
              <h1 id = "siteTitle"> New-Magdalen Football Club </h1>
           </div>
-          <div id = "rCol" class= "col-sm-2 col-xs-2 col-lg-1"> <img src = "img/Magdalen.png"" alt="magLogo" style="width:68px;height:79px;"> 
+          <div id = "rCol" class= "col-sm-2 col-xs-2 col-lg-1"> 
+            <img src = "img/Magdalen.png" alt = "magLogo" style="width:68px;height:79px;" > 
           </div>
-
-        </div>
 
       </div>
    
+     <div class = "row row-eq-height">
+        <div id = "lCol" class= "col-sm-2 col-xs-2 col-lg-1"> </div>
 
+        <div id = "wga" class = "col-sm-8 col-xs-8 col-lg-10">
 
-    <div class = "container">
+    		  <h1><%= title %></h1>
 
-		<h1><%= title %></h1>
+    	   	<ol>
+    			 <% for (var i =0; i < items.length; i++) { %>
+    			     <li><%= items[i].desc %> </li>
 
-		<ol>
-			<% for (var i =0; i < items.length; i++) { %>
-			    <li><%= items[i].desc %> </li>
+    			 <%} %>
+    		  </ol>
 
-			<%} %>
-		</ol>
-
-	    <form action ="/add" method = "post">
-	    	<input type = "text" name = "newItem">
-	    	<input type = "submit">
-	    </form>
-    </div>
+    	    <form action="/add" method="post">
+            <button name="newItem"> GO! </button>
+          </form>
+        </div>
 
     <script src = "jquery/dist/jquery.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.js"</script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
 
 </body>
 
