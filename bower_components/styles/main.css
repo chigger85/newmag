@@ -1,6 +1,6 @@
 #lCol {
 
-	background: #666;
+	background: #F2EFF0;
 	vertical-align: middle;
 	height:140px;
 	float: left;
@@ -15,7 +15,7 @@
 
 #rCol {
 
-	background: #666;
+	background: #F2EFF0;
 	height:140px;
 	vertical-align: middle;
 	float: right;
@@ -30,8 +30,8 @@
 #mCol {
 
 	background-image: url("../img/bgTitle.png");
-	background-size: 800px;
-	height:140px;
+	background-size: 700px;
+	height:240px;
 }
 
 #siteTitle {
