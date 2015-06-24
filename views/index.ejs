@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
-<body style = "background-color: #F2EFF0   ">
+<body style = "background-color: #F2EFF0 ">
      <header class = "navbar-inverse" role = "banner"> 
         <div class="container">
 
@@ -45,24 +45,25 @@
         </div>
       </div>
     </header>
-  
+    
      <div class = "row row-eq-height">
-         <div id = "lCol" class= "col-sm-2 col-xs-2 col-lg-1"> 
-            <img src = "img/New.svg" alt = "newLogo" style="width:68px;height:79px;">
+         <div id = "lCol" class= "col-sm-2 col-xs-2 col-lg-2"> 
+            <img src = "img/New.svg" alt = "newLogo" style="width:108px;height:120px;">
          </div>
-          <div id = "mCol" class= "col-sm-8 col-xs-8 col-lg-10">
+          <div id = "mCol" class= "col-sm-8 col-xs-8 col-lg-8">
              <h1 id = "siteTitle"> New-Magdalen Football Club </h1>
           </div>
-          <div id = "rCol" class= "col-sm-2 col-xs-2 col-lg-1"> 
-            <img src = "img/Magdalen.png" alt = "magLogo" style="width:68px;height:79px;" > 
+          <div id = "rCol" class= "col-sm-2 col-xs-2 col-lg-2"> 
+            <img src = "img/Magdalen.png" alt = "magLogo" style="width:108px;height:120px;" > 
           </div>
 
       </div>
+
    
      <div class = "row row-eq-height">
-        <div id = "lCol" class= "col-sm-2 col-xs-2 col-lg-1"> </div>
+        <div id = "lCol" class= "col-sm-5 col-xs-5 col-lg-5"> </div>
 
-        <div id = "wga" class = "col-sm-8 col-xs-8 col-lg-10">
+        <div id = "wga" class = "col-sm-2 col-xs-2 col-lg-2">
 
     		  <h1><%= title %></h1>
 
@@ -72,11 +73,22 @@
 
     			 <%} %>
     		  </ol>
-
-    	    <form action="/add" method="post">
-            <button name="newItem"> GO! </button>
-          </form>
         </div>
+
+        
+        
+        <div id = "rCol" class= "col-sm-5 col-xs-5 col-lg-5"> </div>
+
+      </div>
+
+    <div class="container">
+      <div id = "goButton" class = "col-sm-1 col-xs-1 col-lg-1">
+          <form  action="/add" method="post">
+            <button name="newItem"> GO AGAIN! </button>
+          </form>
+      </div>
+
+    </div>
 
     <script src = "jquery/dist/jquery.js"></script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
