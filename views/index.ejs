@@ -54,7 +54,7 @@
             <img src = "img/New.svg" alt = "newLogo" style="width:108px;height:120px;">
          </div>
           <div id = "mCol1" class= " titleField col-sm-8 col-xs-8 col-lg-8">
-            <h1 id = "siteTitle"> New-Magdalen Football Club </h1>
+            <h1 id = "siteTitle"> New-Magdalen Old Boys F.C. </h1>
               <div class= " bg col-sm-8 col-xs-8 col-lg-8">
              
               </div>
@@ -68,7 +68,7 @@
       <div class="container">
         <div id = "goButton" class = "col-sm-12 col-xs-12 col-lg-12 ">
           <form  action="/add" method="post">
-            <button name="newItem"> GO AGAIN! </button>
+            <button id = "go" name="newItem"> GO AGAIN! </button>
           </form>
       </div>
 
@@ -80,7 +80,7 @@
 
         <div id = "wga" class = "col-sm-2 col-xs-2 col-lg-2">
 
-    		  <h1><%= title %></h1>
+    		  <h1 id = "tit1" ><%= title %></h1>
 
     	   	<ol>
     			 <% for (var i =0; i < items.length; i++) { %>
@@ -95,6 +95,15 @@
         <div id = "rCol" class= "col-sm-5 col-xs-5 col-lg-5"> </div>
 
       </div>
+
+
+    <div class =  "row">
+      <div id ="video-box" class= "col-sm-12 col-xs-12 col-lg-12">
+
+     
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xlWR9oVqyA0" frameborder="0" allowfullscreen></iframe>
+
+    </div>
 
     
 

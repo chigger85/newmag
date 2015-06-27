@@ -73,18 +73,34 @@
 	text-shadow: 2px 2px #333	;
 	font-size: 40px;	
 	text-align : center;	
-	text-transform: 
+	font-style: bold;
 
 
 }
 
+#tit1 {
+
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: #808080;
+
+}
 
 
+#go{
+
+	border: 1px solid;
+	border-radius: 5px;	
+	border-color:#808080;
+}
 
 #wga{
 	background: #F2EFF0;
 	text-indent: 30px;
 	font-style: bold;
+	border: 1px solid;
+	border-radius: 5px;	
+	border-color:#808080;
 }
 
 #goButton{
@@ -93,5 +109,17 @@ vertical-align: middle;
 background: #F2EFF0;
 }
 
+#video-box{
+margin-top: 20px;
+text-align : center;
+vertical-align: middle;
+
+}
+
+
+
+
+
+}
 
 
